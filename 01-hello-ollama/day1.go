@@ -1,4 +1,4 @@
-package main
+package hello
 
 import (
 	"bufio"
@@ -27,7 +27,7 @@ type ChatResponse struct {
 	} `json:"choices"`
 }
 
-func main() {
+func Hello() {
 	host := os.Getenv("OLLAMA_HOST")
 	model := os.Getenv("OLLAMA_MODEL")
 	if host == "" {
